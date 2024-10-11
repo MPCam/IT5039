@@ -1,0 +1,107 @@
+/*Week1 lab css*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    max-width: 100%;
+}
+
+/*Median Salary*/
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.money {
+    font-size: 1.8em;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    margin-top: 10px;
+}
+
+.brackets {
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+    color: #555;
+    margin-top: 0px;
+}
+
+/*cards*/
+
+.sections {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.sections::after { content: ""; display: block; clear: both; }
+
+.card {
+    width: 300px;
+    height: auto;
+    background-color: white;
+    margin: 15px;
+    padding-bottom: 30px;
+}
+
+.number {
+    font-size: 2.5em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    margin-bottom: 0px;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.statement {
+    font-size: 1em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.number:hover { color: blueviolet;}
+
+@media (max-width:800px) {
+    .sections {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
