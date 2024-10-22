@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        //Create array
+        let fruits = ['apple', 'orange', 'cherry'];
+
+        //Accessing fruits
+        console.log(fruits[0]);
+        console.log(fruits[fruits.length -1]);
+
+        //Add elements
+        fruits.push('pear'); //Adds to end
+        fruits.unshift('watermelon'); //Adds to start
+        console.log(fruits);
+
+        //Delete from end
+        fruits.pop();
+        //Delete from beginning
+        fruits.shift();
+        console.log(fruits);
+
+        //Find a value
+        console.log(fruits.includes('banana'));
+        console.log(fruits.includes('cherry'));
+
+        //Iterating over arrays
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+        //using forEach method
+        fruits.forEach((fruits) => console.log(fruits));
+        let newarray = fruits.filter((fruits) => fruits.length > 5);
+        console.log(newarray);
+
+
+    </script>
+</body>
+</html>

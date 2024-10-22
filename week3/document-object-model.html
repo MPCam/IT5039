@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body id="body">
+    <h1>Document Object Model</h1>
+    <h1 id="title">Hello</h1>
+    <input type="checkbox"/>
+    <button class="btn btn1">Click me</button>
+    <ul id="list">
+        <li class="item"><a href="www.google.com">Google</a></li>
+        <li class="item">Second</li>
+        <li class="item">Third</li>
+    </ul>
+    <script>
+        console.log(document.getElementById('title'));
+        console.log(document.getElementsByClassName('item')[0]);
+        console.log(document.querySelector('.item'));
+        console.log(document.querySelectorAll('.item'));
+
+        //Change content - example for exit button for assignment
+        //document.querySelector('#body').innerText = "Goodbye"
+
+        //Change style
+        document.getElementById('title').style.backgroundColor = 'red';
+        document.querySelectorAll('.item')[0].style.backgroundColor = "orange";
+
+        //Class list
+        console.log(document.querySelector('button').classList);
+        document.querySelector('button').classList.add('yellow');
+        document.querySelector('button').classList.remove('yellow');
+        document.querySelector('button').classList.toggle('btn');
+    </script>
+</body>
+</html>

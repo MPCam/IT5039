@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'jack';
+        //Object
+        //How to create an Object
+        let person = {
+            firstName:'Jack',
+            lastName: 'Smith',
+            age: 25,
+            address: {
+                streetNo: 55,
+                street: 'Happy Street',
+                city: "Auckland",
+                country: 'New Zealand'
+            },
+            greet: function() {
+                console.log(`Greetings from ${this.firstName}`);
+            }
+        };
+
+        //How to access information
+        //dot notation
+        console.log(person.firstName);
+        console.log(person.lastName);
+        //bracket notation
+        console.log(person['age']);
+        //Adding Properties
+        person.height = 168;
+        console.log(person.height)
+        //Modifying Properties
+        person.height = 188;
+        console.log(person.height)
+        //Delete Properties
+        delete person.height;
+        console.log(person)
+        //Nested object
+        console.log(person.address.city);
+        //Function VS Method
+        //If the function is inside the object we call it a method
+        console.log(person.greet())
+
+    </script>
+</body>
+</html>
