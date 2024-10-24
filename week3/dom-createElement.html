@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"/>
+    <button onclick="addToDo()">Add to do</button>
+    <ul>
+        <li id="test-todo">test</li>
+    </ul>
+    <script>
+        //add new element
+        function addToDo() {
+            const newToDo = document.querySelector('input').value;
+            const newTaskElement = document.createElement('li');
+            newTaskElement.textContent = newToDo;
+            document.querySelector('ul').appendChild(newTaskElement);
+        }
+        //remove an element
+        document.getElementById("test-todo").remove();
+    </script>
+</body>
+</html>
